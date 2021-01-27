@@ -42,7 +42,7 @@ func init()  {
 }
 
 func worker(threadId int64)  {
-	ws, err := websocket.Dial(url, "", "https://baidu.com")
+	ws, err := websocket.Dial(url, "", "http://baidu.com")
 	if err != nil {
 		log.Println("worker dial fail:", err)
 		wg.Done()
