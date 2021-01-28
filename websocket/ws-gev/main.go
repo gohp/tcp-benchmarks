@@ -34,7 +34,7 @@ func (s *example) OnClose(c *connection.Connection) {
 
 func main() {
 	handler := new(example)
-	var port int = 7779
+	var port int = 7778
 	var loops int = 10
 
 	wsUpgrader := &ws.Upgrader{}
